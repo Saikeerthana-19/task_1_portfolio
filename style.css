@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+header {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fce4ec;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 5px 0;
+  list-style: none;
+}
+
+#navbar li {
+  margin: 0 15px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+#navbar a.active,
+#navbar a:hover {
+  color: #e91e63;
+  border-bottom: 2px solid #e91e63;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  padding: 10px 15px;
+  background: #f0f0f0;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+ul li:hover {
+  background: #e0e0e0;
+  transform: scale(1.05);
+}
+
+#projects {
+  background-color: #f7f7f7;
+}
+
+.project {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 5px solid #ff4da6;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #222;
+}
+
+.project ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  margin-top: 40px;
+}
+
+.btn-resume {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #e91e63;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-resume:hover {
+  background-color: #d81b60;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
